@@ -22,7 +22,7 @@ Horizontal
 
 ## TODO
 
-- [ ] Receive input from [gosumemory](https://github.com/l3lackShark/gosumemory)
+- [x] Receive input from [gosumemory](https://github.com/l3lackShark/gosumemory)
 - [ ] Round corners
 - [ ] More key styles
 
@@ -46,4 +46,6 @@ The output html file is `dist/index.html`
 
 ## Addition
 
-The OBS plugin [input-overlay](https://github.com/univrsal/input-overlay) 5.0 rc seems to have serious performance issues, so I am going to support websocket input of [gosumemory](https://github.com/l3lackShark/gosumemory) soon.
+~~The OBS plugin [input-overlay](https://github.com/univrsal/input-overlay) 5.0 rc seems to have serious performance issues, so I am going to support websocket input of [gosumemory](https://github.com/l3lackShark/gosumemory) soon.~~
+
+Now it supports [gosumemory](https://github.com/l3lackShark/gosumemory) source, you can change the `inputSource` and `port` item in `config.js` to use it.

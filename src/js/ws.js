@@ -1,6 +1,6 @@
 export default class WSConnection {
-    constructor(onKeyEvent, port = 16899) {
-		this.portNumber = port;
+    constructor(onKeyEvent, url) {
+		this.wsUrl = url;
 		this.onKeyEventFunc = onKeyEvent;
 		this.onDateFunc = this.onData.bind(this);
 		this.start();
@@ -11,7 +11,7 @@ export default class WSConnection {
 	}
 
 	start() {
-		this.ws = new WebSocket(`ws://localhost:${this.portNumber ?? 16899}/`);
+		this.ws = new WebSocket(this.wsUrl);
 
 		this.ws.onmessage = this.onDateFunc;
 
