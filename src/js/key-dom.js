@@ -29,7 +29,11 @@ export const setKeyHTML = (keyNames) => {
 	document.getElementById("keys").style.setProperty("--spacing", config.spacing + "px");
 	document.getElementById("keys").style.setProperty("--key-size", config.keySize + "px");
 	document.getElementById("keys").style.setProperty("--key-color", config.keyColor);
+	document.getElementById("keys").style.setProperty("--bar-color", config.barColor);
+	document.getElementById("keys").style.setProperty("--border-width", config.borderWidth + "px");
+	document.getElementById("keys").style.setProperty("--border-radius", config.borderRadius + "px");
 	document.getElementById("keys").style.setProperty("--key-text-color-pressed", config.keyTextColorPressed);
+
 
 	const totalKeySize = config.keySize * keyNames.length + config.spacing * (keyNames.length - 1) + 40;
 

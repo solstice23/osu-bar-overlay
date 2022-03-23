@@ -23,7 +23,8 @@ Horizontal
 ## TODO
 
 - [x] Receive input from [gosumemory](https://github.com/l3lackShark/gosumemory)
-- [ ] Round corners
+- [x] Round corners
+- [x] Fix glitches of the keys when the round corners are enabled
 - [ ] More key styles
 
 ## Usage

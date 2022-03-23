@@ -25,6 +25,12 @@ const updateBarVertical = (bar) => {
 		bar.position.y -= delta / 2;
 	}else{
 		bar.position.y -= delta;
+		if (!bar.released) {
+			bar.released = true;
+			bar.height -= config.borderRadius;
+			bar.position.y -= config.borderRadius / 2;
+			bar.radius = Math.min(bar.radius, bar.height / 2);
+		}
 	}
 }
 
@@ -52,6 +58,12 @@ const updateBarHorizontal = (bar) => {
 		bar.position.x -= delta / 2;
 	}else{
 		bar.position.x -= delta;
+		if (!bar.released) {
+			bar.released = true;
+			bar.width -= config.borderRadius;
+			bar.position.x -= config.borderRadius / 2;
+			bar.radius = Math.min(bar.radius, bar.width / 2);
+		}
 	}
 }
 
@@ -67,18 +79,20 @@ const frameUpdateHorizontal = () => {
 export const keyDown = (track) => {
 	let bar;
 	if (config.direction === "horizontal") {
-		bar = two.makeRectangle(
-			config.areaHeightOrWidth,
+		bar = two.makeRoundedRectangle(
+			config.areaHeightOrWidth + config.borderRadius / 2,
 			20 + (config.keySize + config.spacing) * track + config.keySize / 2,
-			0,
-			config.keySize
+			config.borderRadius,
+			config.keySize,
+			config.borderRadius
 		);
 	} else {
-		bar = two.makeRectangle(
+		bar = two.makeRoundedRectangle(
 			20 + (config.keySize + config.spacing) * track + config.keySize / 2,
-			config.areaHeightOrWidth,
+			config.areaHeightOrWidth + config.borderRadius / 2,
 			config.keySize,
-			0
+			config.borderRadius,
+			config.borderRadius
 		);
 	}
 
@@ -87,6 +101,7 @@ export const keyDown = (track) => {
 	bar.noStroke();
 	bar.startTime = + new Date();
 	bar.endTime = -1;
+	bar.released = false;
 	bars[track].push(bar);
 	two.update();
 }

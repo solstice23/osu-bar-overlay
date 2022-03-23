@@ -17,7 +17,9 @@ key: [
 	areaHeightOrWidth: 600,
 	keySize: 60,
 	spacing: 20,
+	borderWidth: 3,
+	borderRadius: 0,
 	fade: true,
-	inputSource: "gosumemory", // "inputOverlayOBSPlugin" or "gosumemory"
-	port: 24050, // inputOverlayOBSPlugin default port is 16899, and gosumemory default port is 24050
+	inputSource: "inputOverlayOBSPlugin", // "inputOverlayOBSPlugin" or "gosumemory"
+	port: 16899, // inputOverlayOBSPlugin default port is 16899, and gosumemory default port is 24050
 };
