@@ -18,7 +18,7 @@ Horizontal
 ## Features
 
 - Customizable: keys, colors, speed, spacing, etc.
-- Receives input from websocket (requires the OBS plugin [input-overlay](https://github.com/univrsal/input-overlay) 5.0)
+- Receives input from websocket (requires the OBS plugin [input-overlay](https://github.com/univrsal/input-overlay) 5.0 or [gosumemory](https://github.com/l3lackShark/gosumemory))
 
 ## TODO
 
