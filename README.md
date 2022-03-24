@@ -24,7 +24,7 @@ Horizontal
 
 - [x] Receive input from [gosumemory](https://github.com/l3lackShark/gosumemory)
 - [x] Round corners
-- [x] Fix glitches of the keys when the round corners are enabled
+- [ ] Fix glitches of the keys when the round corners are enabled
 - [ ] More key styles
 
 ## Usage
