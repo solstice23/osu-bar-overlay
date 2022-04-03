@@ -17,6 +17,7 @@ Horizontal
 
 ## Features
 
+- Two styles to choose: square and light
 - Customizable: keys, colors, speed, spacing, etc.
 - Receives input from websocket (requires the OBS plugin [input-overlay](https://github.com/univrsal/input-overlay) 5.0 or [gosumemory](https://github.com/l3lackShark/gosumemory))
 
@@ -25,7 +26,7 @@ Horizontal
 - [x] Receive input from [gosumemory](https://github.com/l3lackShark/gosumemory)
 - [x] Round corners
 - [ ] Fix glitches of the keys when the round corners are enabled
-- [ ] More key styles
+- [x] More key styles
 
 ## Usage
 

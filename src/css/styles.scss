@@ -2,6 +2,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	width: max-content;
+	font-family: 'Comfortaa', 'Torus';
 }
 
 #main {
@@ -29,6 +30,7 @@ body, html {
 #keys {
     display: flex;
     flex-wrap: nowrap;
+	margin-bottom: 10px;
 	
 	.vertical & {
 		flex-direction: row;
@@ -43,7 +45,7 @@ body, html {
 }
 
 
-.key {
+.square .key {
 	display: flex;
     width: var(--key-size);
     height: var(--key-size);
@@ -96,3 +98,60 @@ body, html {
 }
 
 
+.light .key {
+	display: flex;
+    width: var(--key-size);
+    height: var(--key-size);
+	border-radius: var(--border-radius);
+    text-align: center;
+    line-height: var(--key-size);
+    font-size: calc(var(--key-size) * 0.4);
+	color: var(--key-color);
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&:last-child {
+		margin: 0 !important;
+	}
+	.vertical & {
+		margin-right: var(--spacing);
+	}
+	.horizontal & {
+		margin-bottom: var(--spacing);
+	}
+	span {
+		transform: scale(1);
+		transition: all .035s ease-in;
+	}
+	&.pressed span{
+		transform: scale(1.1);
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: var(--key-color);
+		border-radius: 10px;
+		z-index: -1;
+		opacity: .6;
+	}
+	.vertical &::before {
+		top: calc(0px - var(--border-width));
+		height: 6px;
+		left: 0;
+		right: 0;
+	}
+	.horizontal &::before {
+		left: calc(0px - var(--border-width));
+		width: 6px;
+		top: 0;
+		bottom: 0;
+	}
+	&.pressed::before {
+		opacity: 1;
+		box-shadow: 0 0 4px 1px var(--key-color);
+		filter: contrast(1.25);
+	}
+}

@@ -22,9 +22,10 @@ export const setKeyHTML = (keyNames) => {
 
 	let keyHTML = "";
 	for (let i of keyNames) {
-		keyHTML += `<div class="key" id="key-${i.keyCode}">${i.displayName}</div>`;
+		keyHTML += `<div class="key" id="key-${i.keyCode}"><span>${i.displayName}</span></div>`;
 	}
 	document.getElementById("keys").innerHTML = keyHTML;
+	document.getElementById("keys").classList.add(config.style);
 
 	document.getElementById("keys").style.setProperty("--spacing", config.spacing + "px");
 	document.getElementById("keys").style.setProperty("--key-size", config.keySize + "px");

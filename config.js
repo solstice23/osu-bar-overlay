@@ -11,6 +11,7 @@ key: [
 	],
 	direction: "vertical", // "horizontal" or "vertical"
 	speed: 50,
+	style: 'square', // "square" or "light"
 	keyColor: "#ff66aa",
 	barColor: "#ff66aa88",
 	keyTextColorPressed: "#ffffff",
