@@ -5,6 +5,9 @@ Visualize keyboard history for osu!
 
 <p align="center">
 
+https://user-images.githubusercontent.com/23134847/168428457-2ec663ab-d224-4821-a346-dc67a8f91911.mp4
+
+
 ![vertical](examples/vertical.gif)
 
 Vertical
