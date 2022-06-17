@@ -1,4 +1,4 @@
-# bar-overlay-for-osu
+# osu! bar overlay
 Visualize keyboard history for osu! in your stream.
 
 ## Example
@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/23134847/168428457-2ec663ab-d224-4821-
 
 ## Usage
 
-1. Choose one of the input sources below
+1. Choose one of these input sources below
 
 + Install [input-overlay](https://github.com/univrsal/input-overlay) plugin 5.0, and turn on the websocket checkbox in plugin settings.
 
@@ -39,7 +39,7 @@ https://user-images.githubusercontent.com/23134847/168428457-2ec663ab-d224-4821-
 
 2. Clone or download this repository, edit `/dist/config.js` to set your preferences.
 
-3. Add a browser source in the OBS, check "Local file" and set the URL to `file:///E:/bar-overlay-for-osu/dist/index.html` (your path). Maybe you should set the width and height to proper values to fit the overlay.
+3. Add a browser source in the OBS, check "Local file" and set the URL to `E:/osu-bar-overlay/dist/index.html` (your path). Maybe you should set the width and height to proper values to fit the overlay.
 
 4. Enjoy it!
 
