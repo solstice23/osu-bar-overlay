@@ -1,29 +1,34 @@
 {
-  "name": "bar-overlay-for-osu",
-  "version": "1.0.0",
-  "description": "Visualize keyboard history for osu! using keyboard overlay OBS plugin",
-  "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/solstice23/bar-overlay-for-osu.git"
-  },
-  "author": "solstice23",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/solstice23/bar-overlay-for-osu/issues"
-  },
-  "homepage": "https://github.com/solstice23/bar-overlay-for-osu#readme",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.3.2",
-    "parcel": "^2.3.2"
-  },
-  "dependencies": {
-    "two.js": "^0.8.3"
-  }
+    "name": "bar-overlay-for-osu",
+    "version": "1.0.0",
+    "description": "Visualize keyboard history for osu! using keyboard overlay OBS plugin",
+    "source": "src/index.html",
+    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "scripts": {
+        "start": "parcel",
+        "build": "parcel build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/solstice23/bar-overlay-for-osu.git"
+    },
+    "author": "solstice23",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/solstice23/bar-overlay-for-osu/issues"
+    },
+    "homepage": "https://github.com/solstice23/bar-overlay-for-osu#readme",
+    "parcelIgnore": [
+        "config.js",
+        "extra-styles.css"
+    ],
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.6.0",
+        "parcel": "^2.6.0",
+        "parcel-reporter-static-files-copy": "^1.3.4",
+        "parcel-resolver-ignore": "^2.1.1"
+    },
+    "dependencies": {
+        "two.js": "^0.8.3"
+    }
 }

@@ -1,5 +1,5 @@
 import {getKeyName, getKeyCode} from './key.js';
-import configJson from "../../config.js";
+//import configJson from "../../config.js";
 
 export const getKeyList = () => {
 	let keyList = [];
@@ -24,4 +24,4 @@ export const defaultKeyStatus = () => {
 	return keyStatus;
 }
 
-export const config = configJson;
+export const config = window.config;

@@ -1,5 +1,5 @@
 import Two from "two.js";
-import config from "../../config.js";
+import {config} from './config-parser.js';
 
 const drawable = document.getElementById("drawable");
 

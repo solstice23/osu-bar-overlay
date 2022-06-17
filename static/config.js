@@ -1,5 +1,5 @@
-export default config = {
-key: [
+window.config = {
+	key: [
 		{
 			key: "Z",
 			displayName: "K1"
@@ -11,7 +11,7 @@ key: [
 	],
 	direction: "vertical", // "horizontal" or "vertical"
 	speed: 50,
-	style: 'square', // "square" or "light"
+	style: 'light', // "light" or "square
 	keyColor: "#ff66aa",
 	barColor: "#ff66aa88",
 	keyTextColorPressed: "#ffffff",

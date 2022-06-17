@@ -1,4 +1,4 @@
-import config from "../../config.js";
+import {config} from './config-parser.js';
 
 export const getKeyDoms = (keyNames) => {
 	let keyDoms = {};
