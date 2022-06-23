@@ -1,0 +1,47 @@
+name: test
+
+on:
+  push:
+    branches:
+      - "master"
+    paths-ignore:
+      - ".github/**"
+      - "examples/**"
+      - ".gitignore"
+      - "LICENSE"
+      - "README"
+
+  pull_request:
+    branches:
+      - "master"
+    paths-ignore:
+      - ".github/**"
+      - "examples/**"
+      - ".gitignore"
+      - "LICENSE"
+      - "README"
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Upload a artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: osu-bar-overlay
+          path: dist

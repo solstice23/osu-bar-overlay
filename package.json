@@ -23,6 +23,8 @@
         "extra-styles.css"
     ],
     "devDependencies": {
+        "@parcel/config-default": "^2.6.2",
+        "@parcel/core": "^2.6.2",
         "@parcel/transformer-sass": "^2.6.0",
         "parcel": "^2.6.0",
         "parcel-reporter-static-files-copy": "^1.3.4",
