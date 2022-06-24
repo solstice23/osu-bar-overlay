@@ -37,7 +37,7 @@ https://user-images.githubusercontent.com/23134847/168428457-2ec663ab-d224-4821-
 
 + Install [gosumemory](https://github.com/l3lackShark/gosumemory), and set a smaller update interval in the gosumemory config file to reduce latency.
 
-2. Download the built files from (release)[https://github.com/solstice23/osu-bar-overlay/releases], edit `/config.js` to set your preferences.
+2. Download the built files from [release](https://github.com/solstice23/osu-bar-overlay/releases), edit `/config.js` to set your preferences.
 
 3. Add a browser source in the OBS, check "Local file" and set the URL to `E:/osu-bar-overlay/index.html` (your path). Maybe you should set the width and height to proper values to fit the overlay.
 
