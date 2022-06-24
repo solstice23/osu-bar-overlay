@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/23134847/168428457-2ec663ab-d224-4821-
 
 ## Usage
 
-1. Choose one of these input sources below
+1. Choose one of these input sources below, which provide real-time keyboard input data to the overlay
 
 + Install [input-overlay](https://github.com/univrsal/input-overlay) plugin 5.0, and turn on the websocket checkbox in plugin settings.
 
