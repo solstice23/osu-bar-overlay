@@ -124,11 +124,11 @@ export const KEYCODES = {
 	//  Edit Key Zone End
 
 	//  Cursor Key Zone Begin
-	0x0e48: ["VC_UP", "ARROW UP"],
-	0x0e4b: ["VC_LEFT", "ARROW LEFT"],
-	0x0e4c: ["VC_CLEAR", ""],
-	0x0e4d: ["VC_RIGHT", "ARROW RIGHT"],
-	0x0e50: ["VC_DOWN", "ARROW DOWN"],
+	0xe048: ["VC_UP", "ARROW UP"],
+	0xe04b: ["VC_LEFT", "ARROW LEFT"],
+	0xe04c: ["VC_CLEAR", ""],
+	0xe04d: ["VC_RIGHT", "ARROW RIGHT"],
+	0xe050: ["VC_DOWN", "ARROW DOWN"],
 
 	/* https://github.com/univrsal/input-overlay/issues/174 */
 	0xee48: ["VC_UP", "ARROW UP"], // 0x0e48
